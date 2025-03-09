@@ -1,8 +1,8 @@
 import express from "express";
 import cluster from "cluster";
-// import os from "os";
+import os from "os";
 
-const totalCPUs = 10;
+const totalCPUs = os.cpus().length;
 
 const port = 3000;
 
